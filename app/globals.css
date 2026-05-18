@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #f6f1ea;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(189, 122, 63, 0.18), transparent 34rem),
+    linear-gradient(180deg, #fbf8f4 0%, #f6f1ea 100%);
+  color: #101012;
+}
+
+::selection {
+  background: #bd7a3f;
+  color: white;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply rounded-3xl border border-black/10 bg-white/80 p-6 shadow-soft backdrop-blur;
+  }
+
+  .input {
+    @apply w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/15;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-2xl bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-black disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-2xl border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:border-brand hover:text-brand;
+  }
+
+  .label {
+    @apply mb-2 block text-sm font-semibold text-ink;
+  }
+
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.28em] text-brand;
+  }
+}
