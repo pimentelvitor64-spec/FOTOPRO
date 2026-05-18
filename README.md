@@ -34,12 +34,14 @@ npm install
 cp .env.example .env.local
 ```
 
-3. Preencha `.env.local` com as chaves do seu projeto Supabase:
+3. O arquivo `.env.example` já está configurado com o projeto Supabase do MVP. Depois de copiar para `.env.local`, confirme que as variáveis ficaram assim:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=https://SEU-PROJETO.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=SUA_CHAVE_ANON
+NEXT_PUBLIC_SUPABASE_URL=https://tarlrwhzyddzcdcislmh.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_MVy1yxzAe3JpBI8p0o_nmw_eyAq5QC9
 ```
+
+> Se você recebeu a chave no formato `COLE_A_PUBLISHABLE_KEY sb_publishable_...`, use somente a parte que começa com `sb_publishable_`.
 
 4. No Supabase, abra **SQL Editor** e execute o arquivo:
 
